@@ -1,0 +1,27 @@
+1   mot de passe identique: mbola misy tsy mety
+2   login resaka authentification : lasas tafiditra daholy na tsy enregistre aza
+3   refresh 5s du page listutilsateur rehefa misy manao inscription ao @ ilay 
+4   asina evaluation mot de passe ilay registre
+
+
+Fonctionalité mande :
+- login 
+- ajout utilisateur :
+	. Ny champ NOM : tsy maintsy lettre iany
+	. Ny champ PRENOM : tsy maintsy lettre iany
+	. Ny champ Email : dia nataoko caracatere ana adresse email. Zany hoe validé ra misy lettre,chiffre sy caractere speciaux
+	. Ny champ MOT DE PASSE : nasiko minimum mot de passe 8 fa tsy maintsy misy lettre miniscule,majuscule,chiffre,caractere speciaux (pour des raison securité)
+	. Misy btn RESET ohatra oe diso ilay anarana na mot de passe dia afaka averina
+- affichage liste utilisateur :
+	. dia ao anaty affichage an'ilay liste misy tableau ID,NOM,PRENOM,EMAIL dia action izay misy btn modifier sy supprimer
+	. ilay btn modifier izay afaka ovaina ny nom,prenom,email dia ilay btn supprimer manala an'ilay utilisateurs
+	. misy pagination ra ohatra ka feno 12 ilay tableau affichage utilisateur dia misy pagination NEXT dia ao @ page 2 ndray ny liste utilisateur sasany
+- modification information an'izay utilisateur tafiditra.Ohatra hoe diso ny nom,prenom,email dia afaka modifiena
+
+
+Fonctionalité mbola mila reglena kely:
+- login:
+	. Lasa tafiditra daholy na tsy mbola enregistré
+- ajout utilisateur :
+	. resaka mot de passe non identique
+- Resaka email unique
