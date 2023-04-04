@@ -16,11 +16,11 @@ class User extends CI_Controller {
     public function dashboard() {
         //Verifier l'utilisateur
          if (!$this->session->userdata('logged_in') || !$this->session->userdata('user_id')) {
-             redirect('user/dashboard');
+             redirect('user/login');
 
 
         // charge la vue
-        $this->load->view('dashboard/dashboardView');
+        $this->load->view('dashboard/DashboardView');
     }
     
     }
@@ -29,7 +29,7 @@ class User extends CI_Controller {
         $this->form_validation->set_rules('password', 'Password', 'required');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('auth/loginView');
+            $this->load->view('auth/LoginView');
         } else {
             $email = $this->input->post('email');
             $password = $this->input->post('password');
